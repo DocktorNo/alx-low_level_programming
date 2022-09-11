@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	write(1, "and that piece of are is useful\" - Dora Korpar, 2015-10-19\n",59);
-	return(1);
+	write(1, "and that piece of is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
