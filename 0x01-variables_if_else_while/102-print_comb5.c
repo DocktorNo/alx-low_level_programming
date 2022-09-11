@@ -11,15 +11,15 @@ int main(void)
 	{
 		for (j = 0; j <= 99; j++)
 		{
-			if (j != i)
+			if (j > i)
 			{
-				putchar(i / 10 + 48);
-				putchar(i % 10 + 48);
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
 				putchar(' ');
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
 
-				if (i * 100 + j !=9899)
+				if (i * 100 + j != 9899)
 				{
 					putchar(',');
 					putchar(' ');
