@@ -1,20 +1,21 @@
+/**
+ * File: main.h
+ * Auth: GS
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x07-pointers_arrays_strings directory.
+ */
 
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#include <stddef.h>
 
-int _isupper(int c);
-int _isdigit(int c);
-int mul(int a, int b);
-void print_numbers(void);
-int _putchar(char);
-void print_most_numbers(void);
-void more_numbers(void);
-void print_line(int n);
-void print_diagonal(int n);
-void print_square(int size);
-void print_triangle(int size);
-void print_number(int n);
+int _putchar(char c);
+void *_memset(void *s, int c, size_t n);
+void *_memcpy(void *dest, const void *src, size_t n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
+void set_string(char **s, char *to);
 
 #endif
-
-
